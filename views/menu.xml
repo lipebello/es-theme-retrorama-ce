@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Theme: Retrorama Champion Edition
+Original author: Filipe Bello
+License: creative commons CC-BY-NC-SA
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+
+
+
+<view name="menu">
+
+    <menuText name="menutitle">
+      <fontPath>${font}</fontPath>
+      <fontSize>0.035</fontSize>
+      <color>${green2}</color>
+    </menuText>
+	
+    <menuText name="menufooter">
+      <fontPath>${font}</fontPath>
+      <fontSize>0.02</fontSize>
+      <color>${yellow}</color>
+    </menuText>
+
+<menuText name="menutext">
+      <fontPath>${font}</fontPath>
+      <fontSize>0.018</fontSize>
+      <color>${fontColor}</color>
+      <separatorColor>50465100</separatorColor>
+      <selectorColor>00000000</selectorColor>
+      <selectedColor>${iconColor}</selectedColor>
+    </menuText>	
+	
+    <menuTextSmall name="menutextsmall">
+      <fontPath>${font}</fontPath>
+      <fontSize>0.016</fontSize>
+      <color>${green2}</color>
+    </menuTextSmall>
+
+<menuBackground name="menubg">
+      <color>ffffff</color>
+      <cornerSize>22 22</cornerSize>
+      <path>./UI/frame.png</path>
+      <scrollbarColor>${green2}</scrollbarColor>
+      <scrollbarCorner>0.49</scrollbarCorner>
+      <scrollbarSize>0.003</scrollbarSize>
+      <scrollbarAlignment>innerright</scrollbarAlignment>
+    </menuBackground>
+
+<!--
+    <menuIcons name="menuicons">
+      <iconKodi>./UI/menuicon.png</iconKodi>
+      <iconSystem>./UI/menuicon.png</iconSystem>
+      <iconUpdates>./UI/menuicon.png</iconUpdates>
+      <iconGames>./UI/menuicon.png</iconGames>
+      <iconControllers>./UI/menuicon.png</iconControllers>
+      <iconUI>./UI/menuicon.png</iconUI>
+      <iconSound>./UI/menuicon.png</iconSound>
+      <iconNetwork>./UI/menuicon.png</iconNetwork>
+      <iconPlanemode>./UI/menuicon.png</iconPlanemode>
+      <iconScraper>./UI/menuicon.png</iconScraper>
+      <iconAdvanced>./UI/menuicon.png</iconAdvanced>
+      <iconQuit>./UI/menuicon.png</iconQuit>
+      <iconRestart>./UI/menuicon.png</iconRestart>
+      <iconShutdown>./UI/menuicon.png</iconShutdown>
+      <iconFastShutdown>./UI/menuicon.png</iconFastShutdown>
+      <iconRetroachievements>./UI/menuicon.png</iconRetroachievements>
+      <iconManual>./UI/menuicon.png</iconManual>
+    </menuIcons>
+-->
+</view>
+  
+
+</theme>

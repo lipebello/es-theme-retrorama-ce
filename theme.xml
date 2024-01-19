@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Theme: Retrorama Champion Edition
+Original author: Filipe Bello
+License: creative commons CC-BY-NC-SA
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+  
+	<include>./views/system.xml</include>
+	<include>./views/helpsystem.xml</include>
+	<include>./views/carousel.xml</include>
+	<include>./views/menu.xml</include>
+	<include>./views/gl.xml</include>
+
+	<variables>
+		<fontColor>f7ecd0</fontColor>
+		<iconColor>f7393b</iconColor>
+		<green1>3ba082</green1>
+		<green2>85b762</green2>
+		<yellow>f7bf46</yellow>
+		<orange>f48c1b</orange>
+		<orange2>ef6828</orange2>
+		<font>./font/font.ttf</font>
+		<metasize>.02</metasize>
+	</variables>
+
+<view name="screen">
+
+	<text name="clock">
+		<pos>.94 .998</pos>
+		<size>w h</size>
+		<origin>0 1</origin>
+		<color>${fontColor}</color>
+		<fontPath>${font}</fontPath>
+		<alignment>right</alignment>
+		<fontSize>0.028</fontSize>
+    </text>
+
+<!--	
+	  <batteryIndicator name="batteryIndicator">
+      <pos>0.01 0.012</pos>
+      <size>0.033 0.0275</size>
+      <horizontalAlignment>left</horizontalAlignment>
+      <incharge>./art/battery/incharge.svg</incharge>
+      <full>./UI/iconController.png</full>
+      <at75>./art/battery/75.svg</at75>
+      <at50>./art/battery/50.svg</at50>
+      <at25>./art/battery/25.svg</at25>
+      <empty>./art/battery/empty.svg</empty>
+      <planemodeIcon>./art/icons/Planemode.png</planemodeIcon>
+      <color>${fontColor}</color>
+    </batteryIndicator>
+-->
+
+    <controllerActivity name="controllerActivity">
+      <pos>0.01 0.012</pos>
+      <size>0.033 0.0275</size>
+      <itemSpacing>0.02</itemSpacing>
+      <color>ffffff</color>
+      <!-- controllers -->
+      <imagePath>./UI/iconController.png</imagePath>
+      <gunPath>./UI/iconGun.png</gunPath>
+      <wheelPath>./UI/iconWheel.png</wheelPath>
+      <activityColor>${iconColor}</activityColor>
+      <hotkeyColor>85b762</hotkeyColor>
+    </controllerActivity>
+
+</view>
+
+
+<view name="system, detailed, basic, video, grid">
+	<helpsystem name="help">
+		<pos>0.01 .968</pos>
+		<origin>0 0</origin>
+		<alignment>left</alignment>
+		<fontPath>${font}</fontPath>  
+		<textColor>${fontColor}</textColor>
+		<iconColor>${iconColor}</iconColor>
+		<fontSize>0.02</fontSize>		
+	</helpsystem>
+	
+<!-- 
+	<text name="themename" extra="true">
+		<text>${system.theme}</text>
+		<fontPath>${font}</fontPath>  
+		<color>${fontColor}</color>
+		<fontSize>0.02</fontSize>
+		<pos>.3 .8</pos>
+		<zIndex>6</zIndex>
+	</text>
+-->
+
+</view>
+
+</theme>
