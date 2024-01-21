@@ -30,11 +30,12 @@
 	</image>
 
 	<text name="label">
-		<color>151515cc</color>
+		<color>151515dd</color>
 		<forceUppercase>true</forceUppercase>
 		<backgroundColor>aa000000</backgroundColor>
 		<fontPath>./font/font.ttf</fontPath>
-		<fontSize>.06</fontSize>
+		<lineSpacing>1.15</lineSpacing>
+		<fontSize>.045</fontSize>
 		<origin>.5 .5</origin>
 		<pos>.5724 .7731</pos>
 		<size>.5651 .1130</size>
