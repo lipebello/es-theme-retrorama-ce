@@ -7,11 +7,23 @@ License: creative commons CC-BY-NC-SA
 <theme>
 	<formatVersion>7</formatVersion>
   
-	<include>./views/system.xml</include>
-	<include>./views/helpsystem.xml</include>
+  <!-- Resolution -->
+	<include subset="Aspect Ratio" if="{screen.ratio} == '16/9'" name="16-9" displayName="Widescreen">./views/sys-wide.xml</include>
+	<include subset="Aspect Ratio" if="{screen.ratio} == '3/2'" name="3-2" displayName="Portable">./views/sys-portable.xml</include>
+	<include subset="Aspect Ratio" if="{screen.ratio} == '4/3'" name="4-3" displayName="Standard">./views/sys-standard.xml</include>
+	
+	<include subset="Button Layout" name="arcade" displayName="Arcade">./views/bt-arcade.xml</include>
+	<include subset="Button Layout" name="snes" displayName="Snes">./views/bt-snes.xml</include>
+	<include subset="Button Layout" name="xbox" displayName="Xbox">./views/bt-xbox.xml</include>
+	<include subset="Button Layout" name="playstation" displayName="Playstation">./views/bt-psx.xml</include>
+
+
 	<include>./views/carousel.xml</include>
 	<include>./views/menu.xml</include>
-	<include>./views/gl.xml</include>
+
+	<!-- Image Type -->
+	<include subset="System image type" name="char" displayName="Characters">./views/chars.xml</include>
+	<include subset="System image type" name="console" displayName="Consoles">./views/console.xml</include>
 
 	<variables>
 		<fontColor>f7ecd0</fontColor>
@@ -24,6 +36,9 @@ License: creative commons CC-BY-NC-SA
 		<font>./font/font.ttf</font>
 		<metasize>.02</metasize>
 	</variables>
+
+
+
 
 <view name="screen">
 
@@ -69,15 +84,16 @@ License: creative commons CC-BY-NC-SA
 </view>
 
 
-<view name="system, detailed, basic, video, grid">
+<view name="system, detailed, basic, video, grid, gamecarousel">
 	<helpsystem name="help">
 		<pos>0.01 .968</pos>
 		<origin>0 0</origin>
 		<alignment>left</alignment>
+		<verticalAlignment>bottom</verticalAlignment>
 		<fontPath>${font}</fontPath>  
 		<textColor>${fontColor}</textColor>
 		<iconColor>${iconColor}</iconColor>
-		<fontSize>0.02</fontSize>		
+		<fontSize>0.025</fontSize>		
 	</helpsystem>
 	
 <!-- 
