@@ -7,7 +7,7 @@ Street Fighter Champion Edition is the Best Street Fighter ever!
 
 ### Contents:
 
-1 - Carousel with custom icons
+1 - Carousel with custom icons  
 2 - Lots of hand drawing video game characters and consoles (chancheable on theme menu)
 3 - System view based on old tape covers
 4 - 5 views
