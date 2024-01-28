@@ -1,5 +1,7 @@
 # Retrorama: Champion edition Theme
 
+![image](https://github.com/lipebello/es-theme-retrorama-ce/blob/master/carousel/auto-allgames.png)
+
 ### About
 
 Emulationstation theme for Batocera. Free to use, not for sale.
