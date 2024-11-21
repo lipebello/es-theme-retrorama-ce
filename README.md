@@ -1,6 +1,6 @@
 # Retrorama: Champion edition Theme
 
-![image](https://github.com/lipebello/es-theme-retrorama-ce/blob/master/carousel/auto-allgames.png)
+![image](https://github.com/lipebello/es-theme-retrorama-ce/blob/master/art/bg/arcade.jpg)
 
 ### About
 
