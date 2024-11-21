@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Theme: Retrorama Champion Edition
+Original author: Filipe Bello
+License: creative commons CC-BY-NC-SA
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+
+<view name="system">
+
+	<image name="char" extra="true">
+		<storyboard>
+        		<animation property="x" from="1.15" begin="0" duration="350" mode="EaseInOut"/>
+				<animation property="opacity" from="0" begin="0" duration="250" mode="EaseInOut"/>
+		</storyboard>
+		<linearSmooth>true</linearSmooth>
+		
+		<path>./art/chars/default.png</path>
+		<path>./art/chars/${system.theme}.png</path>
+
+<!--
+		<pos if="{screen.ratio} == '4/3'">1 .9573</pos>
+		<pos if="{screen.ratio} == '3/2'">1 .9569</pos>
+		<pos if="{screen.ratio} == '16/9'">1 .9611</pos>
+
+		<maxSize if="{screen.ratio} == '4/3'">1 .9573</maxSize>
+		<maxSize if="{screen.ratio} == '3/2'">.9 .9569</maxSize>
+		<maxSize if="{screen.ratio} == '16/9'">1 .9611</maxSize>
+-->
+	<pos>1 1</pos>
+	<maxSize>1 .96</maxSize>
+
+		<origin>1 1</origin>
+		<zIndex>5</zIndex>
+	</image>
+	
+	
+</view>
+
+
+
+  
+
+</theme>

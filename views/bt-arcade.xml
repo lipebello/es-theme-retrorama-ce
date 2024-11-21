@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Theme: Retrorama Champion Edition
+Original author: Filipe Bello
+License: creative commons CC-BY-NC-SA
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+
+<include>../theme.xml</include>
+		
+<view name="system, basic, detailed, video, grid, gamecarousel">
+
+	<helpsystem name="help">
+		<iconUpDown>./UI/BT_ARC/iconUD.png</iconUpDown>
+        <iconLeftRight>./UI/BT_ARC/iconLR.png</iconLeftRight>
+        <iconUpDownLeftRight>./UI/BT_ARC/iconUDLR.png</iconUpDownLeftRight>
+		<iconStart>./UI/BT_ARC/iconST.png</iconStart>
+		<iconSelect>./UI/BT_ARC/iconSL.png</iconSelect>
+		<iconA>./UI/BT_ARC/iconA.png</iconA>
+		<iconB>./UI/BT_ARC/iconB.png</iconB>
+		<iconX>./UI/BT_ARC/iconX.png</iconX>
+		<iconY>./UI/BT_ARC/iconY.png</iconY>
+		<iconL>./UI/BT_ARC/iconL.png</iconL>
+        <iconR>./UI/BT_ARC/iconR.png</iconR>
+		<iconF1>./UI/BT_ARC/iconF1.png</iconF1>
+	</helpsystem>
+
+</view>
+</theme>

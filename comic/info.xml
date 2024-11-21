@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Theme: Retrorama Champion Edition
+Original author: Filipe Bello
+License: creative commons CC-BY-NC-SA
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+
+<variables>
+<brandcolor>050505CC</brandcolor>
+</variables>
+
+<view name="system">
+
+<text name="releaseinfo" extra="true">
+	<size>.0339 h</size>
+	<pos>.0310 .3935</pos>
+	<origin>.5 .5</origin>
+	<fontPath>${comicfontinfo}</fontPath>  
+	<color>${brandcolor}</color>
+	<fontSize>0.027</fontSize>
+	<alignment>center</alignment>
+	<lineSpacing>.9</lineSpacing>
+	<zIndex>6</zIndex>
+	<text if="${system.theme} == 'auto-allgames'
+	|| ${system.theme} == 'auto-favorites'
+	|| ${system.theme} == 'auto-lightgun'
+	|| ${system.theme} == 'auto-neverplayed'
+	|| ${system.theme} == 'auto-retroachievements'
+	|| ${system.theme} == 'auto-verticalarcade'
+	|| ${system.theme} == 'auto-wheel'
+	|| ${system.theme} == 'auto-action'
+	|| ${system.theme} == 'auto-beatemup'
+	|| ${system.theme} == 'auto-fight'
+	|| ${system.theme} == 'auto-platform'
+	|| ${system.theme} == 'auto-shootemup'
+	|| ${system.theme} == 'auto-shooter'
+	|| ${system.theme} == 'classics'
+	|| ${system.theme} == 'capcom'
+	|| ${system.theme} == 'neogeo'
+	|| ${system.theme} == 'auto-lastplayed'
+	|| ${system.theme} == 'auto-adventure'
+	|| ${system.theme} == 'auto-casual'
+	|| ${system.theme} == 'auto-compilation'
+	|| ${system.theme} == 'auto-educational'
+	|| ${system.theme} == 'auto-musicanddance'
+	|| ${system.theme} == 'auto-pinball'
+	|| ${system.theme} == 'auto-puzzle'	
+	|| ${system.theme} == 'auto-racedriving'
+	|| ${system.theme} == 'auto-roleplayings'
+	|| ${system.theme} == 'auto-simulation'	
+	|| ${system.theme} == 'auto-sports'
+	|| ${system.theme} == 'auto-strategy'
+	|| ${system.theme} == 'auto-various'
+	|| ${system.theme} == 'auto-cps1'
+	|| ${system.theme} == 'auto-cps2'
+	|| ${system.theme} == 'auto-cps3'
+	">28-DEC 1981</text>
+	<text if="${system.theme} == 'arcade'">15-OCT 1971</text>
+	<text if="${system.theme} == 'auto-at2players'">22-APR 1987</text>
+	<text if="${system.theme} == 'auto-at4players'">11-OCT 1989</text>
+	<text if="${system.theme} == 'nes'">01-SEP 1986</text>
+	<text if="${system.theme} == 'snes'">31-AUG 1991</text>
+	<text if="${system.theme} == 'megadrive'">19-AUG 1988</text>
+	<text if="${system.theme} == 'mastersystem'">01-SEP 1986</text>
+	<text if="${system.theme} == 'gba'">11-JUN 2001</text>
+	<text if="${system.theme} == 'pcengine'">15-JUN 1983</text>
+	<text if="${system.theme} == 'psx'">29-SEP 1995</text>
+	<text if="${system.theme} == 'dreamcast'">09-SEP 1999</text>
+	<text if="${system.theme} == 'atari2600'">11-SEP 1977</text>
+	<text if="${system.theme} == 'ngpc'">06-AUG 1999</text>
+</text>
+
+<text name="price" extra="true">
+	<size>.0589 .0343</size>
+	<pos>.049 .3931</pos>
+	<origin>0 1</origin>
+	<fontPath>${comicfontinfo}</fontPath>  
+	<color>${brandcolor}</color>
+	<fontSize>0.033</fontSize>
+	<alignment>right</alignment>
+	<verticalAlignment>bottom</verticalAlignment>
+	<lineSpacing>.9</lineSpacing>
+	<zIndex>6</zIndex>
+	<text if="${system.theme} == 'auto-allgames'
+	|| ${system.theme} == 'auto-favorites'
+	|| ${system.theme} == 'auto-lightgun'
+	|| ${system.theme} == 'auto-neverplayed'
+	|| ${system.theme} == 'auto-retroachievements'
+	|| ${system.theme} == 'auto-verticalarcade'
+	|| ${system.theme} == 'auto-wheel'
+	|| ${system.theme} == 'auto-action'
+	|| ${system.theme} == 'auto-beatemup'
+	|| ${system.theme} == 'auto-fight'
+	|| ${system.theme} == 'auto-platform'
+	|| ${system.theme} == 'auto-shootemup'
+	|| ${system.theme} == 'auto-shooter'
+	|| ${system.theme} == 'classics'
+	|| ${system.theme} == 'capcom'
+	|| ${system.theme} == 'neogeo'
+	|| ${system.theme} == 'auto-lastplayed'
+	|| ${system.theme} == 'auto-adventure'
+	|| ${system.theme} == 'auto-casual'
+	|| ${system.theme} == 'auto-compilation'
+	|| ${system.theme} == 'auto-educational'
+	|| ${system.theme} == 'auto-musicanddance'
+	|| ${system.theme} == 'auto-pinball'
+	|| ${system.theme} == 'auto-puzzle'	
+	|| ${system.theme} == 'auto-racedriving'
+	|| ${system.theme} == 'auto-roleplayings'
+	|| ${system.theme} == 'auto-simulation'	
+	|| ${system.theme} == 'auto-sports'
+	|| ${system.theme} == 'auto-strategy'
+	|| ${system.theme} == 'auto-various'
+	|| ${system.theme} == 'auto-cps1'
+	|| ${system.theme} == 'auto-cps2'
+	|| ${system.theme} == 'auto-cps3'
+	">$FREE!</text>
+	<text if="${system.theme} == 'arcade'">$0.25</text>
+	<text if="${system.theme} == 'auto-at2players'">$0.25</text>
+	<text if="${system.theme} == 'auto-at4players'">$0.25</text>
+	<text if="${system.theme} == 'nes'">$89.00</text>
+	<text if="${system.theme} == 'snes'">$199.00</text>
+	<text if="${system.theme} == 'megadrive'">$189.00</text>
+	<text if="${system.theme} == 'mastersystem'">$200.00</text>
+	<text if="${system.theme} == 'gba'">$149.99</text>
+	<text if="${system.theme} == 'pcengine'">¥14,800</text>
+	<text if="${system.theme} == 'psx'">$299.00</text>
+	<text if="${system.theme} == 'dreamcast'">$199.00</text>
+	<text if="${system.theme} == 'atari2600'">$199.00</text>
+	<text if="${system.theme} == 'ngpc'">$69.95</text>
+</text>
+
+<text name="cpu" extra="true">
+	<size>.0589 .0343</size>
+	<pos>.0499 .4259</pos>
+	<origin>0 1</origin>
+	<fontPath>${comicfontinfo}</fontPath>  
+	<color>${brandcolor}</color>
+	<fontSize>0.031</fontSize>
+	<alignment>left</alignment>
+	<verticalAlignment>bottom</verticalAlignment>
+	<lineSpacing>.9</lineSpacing>
+	<zIndex>6</zIndex>
+	
+	<text if="${system.theme} == 'arcade' 
+	|| ${system.theme} == 'auto-favorites'
+	|| ${system.theme} == 'auto-lightgun'
+	|| ${system.theme} == 'auto-neverplayed'
+	|| ${system.theme} == 'auto-retroachievements'
+	|| ${system.theme} == 'auto-verticalarcade'
+	|| ${system.theme} == 'auto-wheel'
+	|| ${system.theme} == 'auto-action'
+	|| ${system.theme} == 'auto-beatemup'
+	|| ${system.theme} == 'auto-fight'
+	|| ${system.theme} == 'auto-platform'
+	|| ${system.theme} == 'auto-shootemup'
+	|| ${system.theme} == 'auto-shooter'
+	|| ${system.theme} == 'auto-at2players'
+	|| ${system.theme} == 'auto-at4players'
+	|| ${system.theme} == 'nes'
+	|| ${system.theme} == 'mastersystem'
+	|| ${system.theme} == 'atari2600'"
+	>8-Bit</text>
+	
+	<text if="${system.theme} == 'snes'
+	|| ${system.theme} == 'megadrive'
+	|| ${system.theme} == 'pcengine'
+	|| ${system.theme} == 'ngpc'"
+	>16-Bit</text>
+	
+	<text if="${system.theme} == 'auto-allgames'
+	|| ${system.theme} == 'gba'
+	|| ${system.theme} == 'psx'
+	|| ${system.theme} == 'dreamcast'"
+	>32-Bit</text>
+</text>
+</view>  
+
+
+
+  </theme>

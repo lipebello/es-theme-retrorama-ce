@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Theme: Retrorama Champion Edition
+Original author: Filipe Bello
+License: creative commons CC-BY-NC-SA
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+
+	<variables>
+	<title>ed1c24</title>
+	<text>f4efe9</text>
+	<other>ffcb05</other>
+	</variables>
+
+<view name="menu">
+
+	<menuText name="menutitle">
+	<fontPath>${comicfontmeta}</fontPath>
+	<fontSize>0.04</fontSize>
+	<color>${title}</color>
+	</menuText>
+
+	<menuText name="menufooter">
+	<fontPath>${comicfontinfo}</fontPath>
+	<fontSize>0.02</fontSize>
+	<color>${other}</color>
+	</menuText>
+
+	<menuText name="menutext">
+	<fontPath>${comicfonthelp}</fontPath>
+	<fontSize>0.02</fontSize>
+	<color>${text}</color>
+	<separatorColor>00000000</separatorColor>
+	<selectorColor>00000000</selectorColor>
+	<selectedColor>${title}</selectedColor>
+	</menuText>	
+
+	<menuTextSmall name="menutextsmall">
+	<fontPath>${comicfonthelp}</fontPath>
+	<fontSize>0.017</fontSize>
+	<color>${text}</color>
+	</menuTextSmall>
+
+	<menuBackground name="menubg">
+	<cornerSize>22 22</cornerSize>
+	<path>./UI/comic/menu.png</path>
+	<scrollbarColor>${title}</scrollbarColor>
+	<scrollbarCorner>0.49</scrollbarCorner>
+	<scrollbarSize>0.003</scrollbarSize>
+	<scrollbarAlignment>innerright</scrollbarAlignment>
+	</menuBackground>
+
+
+	<menuTextEdit name="menutextedit">
+	<inactive>./UI/comic/txtboxinact.png</inactive>
+	<active>./UI/comic/txtboxact.png</active>
+	</menuTextEdit>
+
+	<menuGroup name="menugroup">
+	<fontPath>${comicfontmeta}</fontPath>
+	<fontSize>0.02</fontSize>
+	<color>${other}</color>
+	<backgroundColor>00000000</backgroundColor>
+	<lineSpacing>1.6</lineSpacing>
+	</menuGroup>
+
+<!--
+    <menuIcons name="menuicons">
+      <iconKodi>./UI/menuicon.png</iconKodi>
+      <iconSystem>./UI/menuicon.png</iconSystem>
+      <iconUpdates>./UI/menuicon.png</iconUpdates>
+      <iconGames>./UI/menuicon.png</iconGames>
+      <iconControllers>./UI/menuicon.png</iconControllers>
+      <iconUI>./UI/menuicon.png</iconUI>
+      <iconSound>./UI/menuicon.png</iconSound>
+      <iconNetwork>./UI/menuicon.png</iconNetwork>
+      <iconPlanemode>./UI/menuicon.png</iconPlanemode>
+      <iconScraper>./UI/menuicon.png</iconScraper>
+      <iconAdvanced>./UI/menuicon.png</iconAdvanced>
+      <iconQuit>./UI/menuicon.png</iconQuit>
+      <iconRestart>./UI/menuicon.png</iconRestart>
+      <iconShutdown>./UI/menuicon.png</iconShutdown>
+      <iconFastShutdown>./UI/menuicon.png</iconFastShutdown>
+      <iconRetroachievements>./UI/menuicon.png</iconRetroachievements>
+      <iconManual>./UI/menuicon.png</iconManual>
+    </menuIcons>
+-->
+</view>
+  
+
+</theme>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Theme: Retrorama Champion Edition
+Original author: Filipe Bello
+License: creative commons CC-BY-NC-SA
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+  
+  <include>./views/menu.xml</include>
+  
+<variables>
+	<systemViewName>Skin</systemViewName>
+	<systemview.comic>comic</systemview.comic>
+	<systemview.vhs>vhs</systemview.vhs>
+	<subset.SysImg>Background Image</subset.SysImg>
+	<comicfonthelp>./font/comic-help.ttf</comicfonthelp>
+	<comicfontinfo>./font/comic-info.ttf</comicfontinfo>
+	<comicfontlist>./font/comic-list.ttf</comicfontlist>
+	<comicfontmeta>./font/comic-meta.ttf</comicfontmeta>
+	
+	<fontColor>f7ecd0</fontColor>
+	<iconColor>f7393b</iconColor>
+	<green1>3ba082</green1>
+	<green2>85b762</green2>
+	<yellow>f7bf46</yellow>
+	<orange>f48c1b</orange>
+	<orange2>ef6828</orange2>
+	<font>./font/font.ttf</font>
+	<metasize>.02</metasize>
+	<comicfontcolor>050505</comicfontcolor>
+	
+</variables>
+
+	<subset name="skin" displayName="Skin">
+	<include name="comic" displayName="${systemview.comic}">./comic/comic.xml</include>
+	<include name="vhs" displayName="${systemview.vhs}">./vhs/vhs.xml</include>
+	</subset>
+  
+	<subset name="preview" displayName="${subset.preview}">
+	<include name="Screenshot" displayName="${ss}">./subsets/screenshot.xml</include>
+	<include name="Video" displayName="${vd}">./subsets/video.xml</include>
+	</subset>
+  
+
+	<subset name="button" displayname="Buttons Layout">
+		<include name="arcade" displayName="Arcade">./views/bt-arcade.xml</include>
+		<include name="snes" displayName="Snes">./views/bt-snes.xml</include>
+		<include name="mega" displayName="Mega Drive">./views/bt-mega.xml</include>
+		<include name="xbox" displayName="Xbox">./views/bt-xbox.xml</include>
+		<include name="playstation" displayName="Playstation">./views/bt-psx.xml</include>
+	</subset>
+
+
+  
+
+</theme>

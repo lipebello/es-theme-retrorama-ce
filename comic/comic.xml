@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Theme: Retrorama Champion Edition
+Original author: Filipe Bello
+License: creative commons CC-BY-NC-SA
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+
+<include>./../subsets/colors.xml</include>
+<include>./info.xml</include>
+<include>./../subsets/chars.xml</include>
+<include>./comiclist.xml</include>
+
+<view name="screen">
+
+	<text name="clock">
+		<pos>.99 .995</pos>
+		<origin>1 1</origin>
+		<alignment>right</alignment>
+		<verticalAlignment>bottom</verticalAlignment>
+		<fontPath>${comicfonthelp}</fontPath>  
+		<color>${fontColor}</color>
+		<glowColor>000000</glowColor>
+		<glowSize>2</glowSize>
+		<fontSize>0.023</fontSize>
+		<zIndex>7</zIndex>
+    </text>
+	
+    <controllerActivity name="controllerActivity">
+      <pos>0.01 0.012</pos>
+      <size>0.033 0.0275</size>
+      <itemSpacing>0.02</itemSpacing>
+      <color>ffffff</color>
+      <!-- controllers -->
+      <imagePath>./UI/iconController.png</imagePath>
+      <gunPath>./UI/iconGun.png</gunPath>
+      <wheelPath>./UI/iconWheel.png</wheelPath>
+      <activityColor>${iconColor}</activityColor>
+      <hotkeyColor>85b762</hotkeyColor>
+    </controllerActivity>
+
+</view>
+
+<view name="system, basic, detailed, video, grid, gamecarousel, menu">
+<helpsystem name="help">
+	<linearSmooth>true</linearSmooth>
+	<pos>0.01 .992</pos>
+	<origin>0 1</origin>
+	<alignment>left</alignment>
+	<verticalAlignment>bottom</verticalAlignment>
+	<fontPath>${comicfonthelp}</fontPath>  
+	<glowColor>000000</glowColor>
+	<glowSize>2</glowSize>
+	<textColor>${fontColor}</textColor>
+	<iconColor>FFFFFF</iconColor>
+	<fontSize>0.023</fontSize>		
+	<zIndex>7</zIndex>
+</helpsystem>
+<image name="helpbar" extra="true">
+	<path>./UI/comic/helpbar.jpg</path>
+	<linearSmooth>true</linearSmooth>
+	<opacity>.6</opacity>
+	<size>1 .035</size>
+	<tile>1 1</tile>
+	<origin>.5 1</origin>
+	<pos>.5 1</pos>
+	<zIndex>6</zIndex>
+</image>
+</view>
+
+
+<view name="system">
+
+<carousel name="systemcarousel">
+    <color>00000000</color>
+	<zIndex>0</zIndex>
+</carousel>
+
+<image name="logo">
+	<path >./../UI/comic/empty.png</path>
+</image>
+
+<text name="systemInfo" visible="false"/>
+	<text name="systemInfoEx" extra="true">
+	<text>{binding:total}</text>
+		<storyboard><animation property="opacity" from="0" begin="0" duration="500" mode="EaseIn"/></storyboard>
+		<origin>.5 .5</origin>
+		<pos>.1079 .8101</pos>
+		<alignment>left</alignment>
+		<verticalAlignment>bottom</verticalAlignment>
+		<backgroundColor>00000000</backgroundColor>
+		<color>${color1}</color>
+		<glowColor>000000</glowColor>
+		<glowSize>3</glowSize>
+		<fontPath>${comicfontmeta}</fontPath>
+		<fontSize>0.08</fontSize>
+		<lineSpacing>1.2</lineSpacing>
+		<zIndex>8</zIndex>
+    </text>
+
+<image name="sysinfo" extra="true">
+	<storyboard><animation property="opacity" from="0" begin="0" duration="400" mode="EaseIn"/></storyboard>
+	<path>./UI/comic/sysinfo.png</path>
+	<linearSmooth>true</linearSmooth>
+	<origin>0 1</origin>
+	<maxSize>.18 .33</maxSize>
+	<pos>.008 .98</pos>
+	<zIndex>7</zIndex>
+</image>
+
+<image name="brandchar" extra="true">
+	<path>./art/glchar/${system.theme}.jpg</path>
+	<linearSmooth>true</linearSmooth>
+	<origin>.5 .5</origin>
+	<size>.0979 .1935</size>
+	<pos>.0615 .2598</pos>
+	<zIndex>5</zIndex>
+</image>
+
+<image name="brand" extra="true">
+	<path>./UI/comic/brand.png</path>
+	<linearSmooth>true</linearSmooth>
+	<size>.1089 .4204</size>
+	<origin>.5 .5</origin>
+	<pos>.0615 .2231</pos>
+	<zIndex>4</zIndex>
+</image>
+
+<image name="syslogo" extra="true">
+	<path>./art/logo/${system.theme}.png</path>
+	<linearSmooth>true</linearSmooth>
+	<origin>0 0</origin>
+	<maxSize>.5501 .4001</maxSize>
+	<pos>.116 .0041</pos>
+	<zIndex>4</zIndex>
+</image>
+
+<image name="comicconsole" extra="true" if="${system.hardwareType} == 'console' || ${system.hardwareType} == 'portable'">
+	<storyboard><animation property="opacity" from="0" begin="0" duration="300" mode="EaseInOut"/></storyboard>
+	<path>./art/console/${system.theme}.png</path>
+	<linearSmooth>true</linearSmooth>
+	<maxSize>.5613 .6481</maxSize>
+	<origin>0 1</origin>
+	<pos>.1101 .9555</pos>
+	<zIndex>3</zIndex>
+</image>
+
+
+<image name="comicbg1" extra="true" if="${system.hardwareType} == 'console' || ${system.hardwareType} == 'portable'">
+	<path>./UI/comic/bgcolor1.png</path>
+	<color>${color2}</color>
+	<linearSmooth>true</linearSmooth>
+	<size>.7526 .6935</size>
+	<origin>.5 .5</origin>
+	<pos>.5302 .5630</pos>
+	<zIndex>2</zIndex>
+</image>
+
+<image name="comicbg2" extra="true" if="${system.hardwareType} == 'console' || ${system.hardwareType} == 'portable'">
+	<path>./UI/comic/bgcolor2.png</path>
+	<color>${color1}</color>
+	<linearSmooth>true</linearSmooth>
+	<size>.7354 .6630</size>
+	<origin>.5 .5</origin>
+	<pos>.5302 .5630</pos>
+	<zIndex>2</zIndex>
+</image>
+
+<image name="comicbar" extra="true" if="${system.hardwareType} != 'arcade' || ${system.hardwareType} != 'auto collection'">
+	<path>./UI/comic/bar.png</path>
+	<color>${color1}</color>
+	<linearSmooth>true</linearSmooth>
+	<size>1 .0722</size>
+	<origin>.5 .5</origin>
+	<pos>.5 .0713</pos>
+	<zIndex>3</zIndex>
+</image>
+
+<image name="arcadebg" extra="true" if="${system.hardwareType} == 'auto collection' || ${system.hardwareType} == 'arcade'">
+	<path>./UI/comic/arcadebg.png</path>
+	<color>${color1}</color>
+	<linearSmooth>true</linearSmooth>
+	<size>1 .3287</size>
+	<origin>.5 0</origin>
+	<pos>0.5 0</pos>
+	<zIndex>3</zIndex>
+</image>
+
+<image name="arcadebgart" extra="true" if="${system.hardwareType} == 'auto collection' || ${system.hardwareType} == 'arcade'">
+	<path>./art/bg/default.jpg</path>
+	<path>./art/bg/${system.theme}.jpg</path>
+	<linearSmooth>true</linearSmooth>
+	<size>1 .6759</size>
+	<origin>.5 1</origin>
+	<pos>0.5 1</pos>
+	<zIndex>2</zIndex>
+</image>
+
+<image name="comicbgblack" extra="true">
+	<path>./UI/comic/comicbg.jpg</path>
+	<linearSmooth>true</linearSmooth>
+	<color>FFFFFFAA</color>
+	<size>1 1</size>
+	<origin>.5 .5</origin>
+	<pos>.5 .5</pos>
+	<zIndex>1</zIndex>
+</image>
+
+
+<text name="themename" extra="true">
+	<text>${system.theme}</text>
+	<fontPath>${font}</fontPath>  
+	<color>${fontColor}</color>
+	<fontSize>0.02</fontSize>
+	<alignment>left</alignment>
+	<pos>.01 .90</pos>
+	<zIndex>10</zIndex>
+</text>
+
+<!--
+<text name="themename2" extra="true">
+	<text>${system.manufacturer}</text>
+	<fontPath>${font}</fontPath>  
+	<color>${fontColor}</color>
+	<fontSize>0.02</fontSize>
+	<alignment>left</alignment>
+	<pos>.01 .92</pos>
+	<zIndex>6</zIndex>
+</text>
+
+<text name="themename3" extra="true">
+	<text>${system.hardwareType}</text>
+	<fontPath>${font}</fontPath>  
+	<color>${fontColor}</color>
+	<fontSize>0.02</fontSize>
+	<alignment>left</alignment>
+	<pos>.01 .94</pos>
+	<zIndex>6</zIndex>
+</text>
+-->
+
+</view>
+
+
+</theme>

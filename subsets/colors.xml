@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Theme: Retrorama Champion Edition
+Original author: Filipe Bello
+License: creative commons CC-BY-NC-SA
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+  <!--Manufacturer colors-->
+<variables>
+
+<color1>f0f0f0</color1>
+<color2>f0f0f0</color2>
+
+<color1 if="${system.theme} == 'auto-allgames'
+	|| ${system.theme} == 'auto-favorites'
+	|| ${system.theme} == 'auto-lightgun'
+	|| ${system.theme} == 'auto-neverplayed'
+	|| ${system.theme} == 'auto-retroachievements'
+	|| ${system.theme} == 'auto-verticalarcade'
+	|| ${system.theme} == 'auto-wheel'
+	|| ${system.theme} == 'auto-action'
+	|| ${system.theme} == 'auto-beatemup'
+	|| ${system.theme} == 'auto-fight'
+	|| ${system.theme} == 'auto-platform'
+	|| ${system.theme} == 'auto-shootemup'
+	|| ${system.theme} == 'auto-shooter'
+	|| ${system.theme} == 'classics'
+	|| ${system.theme} == 'capcom'
+	|| ${system.theme} == 'neogeo'
+	|| ${system.theme} == 'auto-lastplayed'
+	|| ${system.theme} == 'auto-adventure'
+	|| ${system.theme} == 'auto-casual'
+	|| ${system.theme} == 'auto-compilation'
+	|| ${system.theme} == 'auto-educational'
+	|| ${system.theme} == 'auto-musicanddance'
+	|| ${system.theme} == 'auto-pinball'
+	|| ${system.theme} == 'auto-puzzle'	
+	|| ${system.theme} == 'auto-racedriving'
+	|| ${system.theme} == 'auto-roleplayings'
+	|| ${system.theme} == 'auto-simulation'	
+	|| ${system.theme} == 'auto-sports'
+	|| ${system.theme} == 'auto-strategy'
+	|| ${system.theme} == 'auto-various'
+	|| ${system.theme} == 'auto-cps1'
+	|| ${system.theme} == 'auto-cps2'
+	|| ${system.theme} == 'auto-cps3'
+	|| ${system.theme} == 'arcade'
+	|| ${system.theme} == 'auto-at2players'
+	|| ${system.theme} == 'auto-at4players'
+">d71920</color1>
+<color2 if="${system.theme} == 'auto-allgames'
+	|| ${system.theme} == 'auto-favorites'
+	|| ${system.theme} == 'auto-lightgun'
+	|| ${system.theme} == 'auto-neverplayed'
+	|| ${system.theme} == 'auto-retroachievements'
+	|| ${system.theme} == 'auto-verticalarcade'
+	|| ${system.theme} == 'auto-wheel'
+	|| ${system.theme} == 'auto-action'
+	|| ${system.theme} == 'auto-beatemup'
+	|| ${system.theme} == 'auto-fight'
+	|| ${system.theme} == 'auto-platform'
+	|| ${system.theme} == 'auto-shootemup'
+	|| ${system.theme} == 'auto-shooter'
+	|| ${system.theme} == 'classics'
+	|| ${system.theme} == 'capcom'
+	|| ${system.theme} == 'neogeo'
+	|| ${system.theme} == 'auto-lastplayed'
+	|| ${system.theme} == 'auto-adventure'
+	|| ${system.theme} == 'auto-casual'
+	|| ${system.theme} == 'auto-compilation'
+	|| ${system.theme} == 'auto-educational'
+	|| ${system.theme} == 'auto-musicanddance'
+	|| ${system.theme} == 'auto-pinball'
+	|| ${system.theme} == 'auto-puzzle'	
+	|| ${system.theme} == 'auto-racedriving'
+	|| ${system.theme} == 'auto-roleplayings'
+	|| ${system.theme} == 'auto-simulation'	
+	|| ${system.theme} == 'auto-sports'
+	|| ${system.theme} == 'auto-strategy'
+	|| ${system.theme} == 'auto-various'
+	|| ${system.theme} == 'auto-cps1'
+	|| ${system.theme} == 'auto-cps2'
+	|| ${system.theme} == 'auto-cps3'
+	|| ${system.theme} == 'arcade'
+	|| ${system.theme} == 'auto-at2players'
+	|| ${system.theme} == 'auto-at4players'
+">92278f</color2>
+
+
+
+<color1 if="${system.manufacturer} == 'Atari'">50b848</color1>
+<color2 if="${system.theme} == 'atari2600'">8dc63f</color2>
+<color2 if="${system.theme} == 'atari5200'">16becf</color2>
+<color2 if="${system.theme} == 'atari7800'">c4161c</color2>
+
+<color1 if="${system.manufacturer} == 'Nintendo'">d71920</color1>
+<color2 if="${system.theme} == 'nes'">0094bb</color2>
+<color2 if="${system.theme} == 'snes'">645faa</color2>
+<color2 if="${system.theme} == 'gba'">723063</color2>
+<color2 if="${system.theme} == 'gb'">acbd82</color2>
+<color2 if="${system.theme} == 'gbc'">008e84</color2>
+
+
+<color1 if="${system.manufacturer} == 'Sega'">0053b9</color1>
+<color2 if="${system.theme} == 'megadrive'">ed1847</color2>
+<color2 if="${system.theme} == 'mastersystem'">c40063</color2>
+<color2 if="${system.theme} == 'dreamcast'">f37053</color2>
+<color2 if="${system.theme} == 'gamegear'">009fda</color2>
+
+<color1 if="${system.manufacturer} == 'NEC'">f37021</color1>
+<color2 if="${system.theme} == 'pcengine'">353553</color2>
+
+<color1 if="${system.manufacturer} == 'SNK'">009fda</color1>
+<color2 if="${system.theme} == 'ngpc'">ffcd67</color2>
+<color2 if="${system.theme} == 'neogeo'">50b848</color2>
+
+<color1 if="${system.manufacturer} == 'Sony'">32327f</color1>
+<color2 if="${system.theme} == 'psx'">c40075</color2>
+
+</variables>
+  
+  
+  </theme>

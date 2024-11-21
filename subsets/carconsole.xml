@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Theme: Retrorama Champion Edition
+Original author: Filipe Bello
+License: creative commons CC-BY-NC-SA
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+
+<view name="system">
+
+	<image name="logo" if="{system.collection}">
+		<path >./art/carconsole/default.png</path>
+		<path >./art/carconsole/${system.theme}.png</path>
+		<linearSmooth>true</linearSmooth>
+	</image>
+	
+	<image name="logo">
+		<path >./art/carconsole/default.png</path>
+		<path>./art/carconsole/${system.theme}.png</path>
+		<linearSmooth>true</linearSmooth>
+    </image>
+	
+	
+</view>
+
+
+
+  
+
+</theme>

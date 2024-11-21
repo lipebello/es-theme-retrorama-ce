@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Theme: Retrorama Champion Edition
+Original author: Filipe Bello
+License: creative commons CC-BY-NC-SA
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+
+<include>./../subsets/screenshot.xml</include>
+<include>./../subsets/video.xml</include>
+
+<view name="basic, detailed, video, grid, gamecarousel">
+
+	<image name="glballoon" extra="true">
+	<path if="{screen.ratio} == '16/9'">./UI/comic/glballoon.png</path>
+	<path if="{screen.ratio} == '3/2'">./UI/comic/glballoon32.png</path>
+	<linearSmooth>true</linearSmooth>
+	<origin>.5 .5</origin>
+	
+	<size if="{screen.ratio} == '16/9'">.2792 .8074</size>
+	<size if="{screen.ratio} == '3/2'">.2741 .7569</size>
+	
+	<pos if="{screen.ratio} == '16/9'">.8501 .4139</pos>
+	<pos if="{screen.ratio} == '3/2'">.8466 .3931</pos>
+	
+	<zIndex>3</zIndex>
+	</image>
+
+	<image name="timesplayed" extra="true">
+	<path>./UI/comic/timesplayed.png</path>
+	<linearSmooth>true</linearSmooth>
+	<color>${color1}</color>
+	<origin>1 1</origin>
+	<size>0.1186 0.0354</size>
+	<pos>0.9797 0.7972</pos>
+	<zIndex>5</zIndex>
+	</image>
+
+	<image name="glchar" extra="true">
+	<path>./art/glchar/${system.theme}.jpg</path>
+	<linearSmooth>true</linearSmooth>
+	<origin>.5 .5</origin>
+	<maxSize>.2751 .5501</maxSize>
+	<pos>.8501 .5381</pos>
+	<zIndex>2</zIndex>
+	</image>
+
+	<image name="glthumb" extra="true">
+	<path>./UI/comic/glthumb.png</path>
+	<linearSmooth>true</linearSmooth>
+	<size>.2464 .5796</size>
+	<origin>.5 .5</origin>
+	<pos>.5771 .3001</pos>
+	<color>${color2}</color>
+	<zIndex>2</zIndex>
+	</image>
+
+	<image name="gllogo" extra="true">
+	<path>./UI/comic/gllogo.png</path>
+	<linearSmooth>true</linearSmooth>
+	<maxSize>.4333 .1694</maxSize>
+	<origin>.5 .5</origin>
+	<pos>.2281 .0954</pos>
+	<color>${color1}</color>
+	<zIndex>2</zIndex>
+	</image>
+
+	<image name="gllogo2" extra="true">
+	<path>./UI/comic/gllogo2.png</path>
+	<linearSmooth>true</linearSmooth>
+	<maxSize>.0751 .0731</maxSize>
+	<origin>.5 .5</origin>
+	<pos>.0583 .0593</pos>
+	<zIndex>3</zIndex>
+	</image>
+
+	<image name="syslogo" extra="true">
+	<path>./art/logo/${system.theme}.png</path>
+	<linearSmooth>true</linearSmooth>
+	<origin>.5 .5</origin>
+	<maxSize>.3531 .2056</maxSize>
+	<pos>.2724 .1046</pos>
+	<zIndex>4</zIndex>
+	</image>
+
+
+	<image name="glbg" extra="true">
+	<path>./UI/comic/glbg.jpg</path>
+	<linearSmooth>true</linearSmooth>
+	<size>1 1</size>
+	<origin>.5 .5</origin>
+	<pos>.5 .5</pos>
+	<zIndex>1</zIndex>
+	</image>
+
+</view>
+
+<view name="basic, detailed, video">
+
+	<image name="glgamelist" extra="true">
+	<path>./UI/comic/glgamelist.jpg</path>
+	<linearSmooth>true</linearSmooth>
+	<maxSize>.4333 .7417</maxSize>
+	<origin>.5 .5</origin>
+	<pos>.2281 .5769</pos>
+	<zIndex>4</zIndex>
+	</image>
+	
+	<image name="ssframe" extra="true">
+	<path>./UI/comic/ssframe.png</path>
+	<linearSmooth>true</linearSmooth>
+	<color>${color1}</color>
+	<origin>.5 .5</origin>
+	<size>.2510 .3407</size>
+	<pos>.5771 .7787</pos>
+	<zIndex>5</zIndex>
+	</image>
+
+	<image name="ssframe2" extra="true">
+	<path>./UI/comic/ssframe2.png</path>
+	<linearSmooth>true</linearSmooth>
+	<origin>.5 .5</origin>
+	<size>.2510 .3407</size>
+	<pos>.5771 .7787</pos>
+	<zIndex>2</zIndex>
+	</image>
+
+	
+	<textlist name="gamelist">
+	<selectorColor>AAAAAA88</selectorColor>
+	<selectedColor>${color1}</selectedColor>
+	<primaryColor>${fontColor}</primaryColor>
+	<secondaryColor>${color2}</secondaryColor>
+	<fontPath>${comicfonthelp}</fontPath>  
+	<glowColor>000000</glowColor>
+	<glowSize>2</glowSize>
+	<horizontalMargin>.005</horizontalMargin>
+	<alignment>left</alignment>
+	
+	<pos if="{screen.ratio} == '16/9'">0.0188 0.2148</pos>
+	<pos if="{screen.ratio} == '3/2'">0.0171 0.2701</pos>
+	
+	<size if="{screen.ratio} == '16/9'">0.4208 0.7151</size>
+	<size if="{screen.ratio} == '3/2'">0.4231 0.6131</size>
+	
+	<fontSize if="{screen.ratio} == '16/9'">0.018</fontSize>
+	<fontSize if="{screen.ratio} == '3/2'">0.01802</fontSize>
+	
+	<lineSpacing if="{screen.ratio} == '16/9'">1.4</lineSpacing>
+	<lineSpacing if="{screen.ratio} == '3/2'">1.53</lineSpacing>
+	
+	</textlist>
+	
+	<image name="md_marquee">
+	<linearSmooth>true</linearSmooth>
+	<origin>0.5 0.5</origin>
+
+	<pos>0.8501 0.8861</pos>
+
+	<maxSize>0.2792 0.1352</maxSize>
+
+	</image>
+
+	<image name="md_thumbnail">
+	<linearSmooth>true</linearSmooth>
+	<origin>.5 .5</origin>
+
+	<pos>.5766 .3001</pos>
+
+	<maxSize if="{screen.ratio} == '16/9'">.2422 .5667</maxSize>
+	<maxSize if="{screen.ratio} == '3/2'">.2356 .5597</maxSize>
+
+	</image>
+	
+	<video name="md_video">
+		<linearSmooth>true</linearSmooth>
+	<origin>.5 .5</origin>
+	<delay>0</delay>
+	<showSnapshotNoVideo>false</showSnapshotNoVideo>
+	<showSnapshotDelay>false</showSnapshotDelay>
+	<effect>none</effect>
+	
+	<maxSize>.2470 .3370</maxSize>
+	<pos>.5771 .7787</pos>
+	<zIndex>4</zIndex>
+	</video>
+	
+	<image name="md_image">
+	<linearSmooth>true</linearSmooth>
+	<roundCorners>.045</roundCorners>
+	<origin>.5 .5</origin>
+	
+	<maxSize>.2470 .3370</maxSize>
+	<pos>.5771 .7787</pos>
+	<zIndex>3</zIndex>	
+	</image>
+</view>
+
+<!--Metadata-->
+
+<view name = "detailed, video">
+
+	<!--invisible-->
+	<text name="md_lbl_playcount , md_lbl_publisher, md_description, md_developer, md_lbl_developer,md_name,md_publisher">
+	<visible>false</visible>
+	</text>
+
+	<text name="md_lbl_rating, md_lbl_genre, md_lbl_releasedate, md_lbl_gametime, md_lbl_lastplayed, md_lbl_players">
+	<fontSize>0.02</fontSize>
+	<alignment>left</alignment>
+	<color>050505</color>
+	<fontPath>${comicfonthelp}</fontPath>
+	<zIndex>5</zIndex>
+	</text>
+
+	<text name="md_genre, md_releasedate, md_name, md_gametime, md_lastplayed, md_players">
+	<fontSize>0.025</fontSize>
+	<alignment>left</alignment>
+	<color>${color2}</color>
+	<fontPath>${comicfontmeta}</fontPath>
+	<glowColor>000000</glowColor>
+	<glowSize>2</glowSize>
+	<zIndex>5</zIndex>
+	</text>
+
+
+
+	<text name="md_lbl_rating">
+	<pos>.7177 .05</pos>
+	<size>.1001 .0101</size>
+	</text>
+	
+	<rating name="md_rating">
+	  <origin>.5 .5</origin>
+	  <pos>0.805 0.05</pos>
+	  <size>0.0701</size>
+	  <linearSmooth>true</linearSmooth>
+	  <filledPath>./UI/comic/rating.png</filledPath>
+	  <unfilledPath>./UI/comic/ratingempty.png</unfilledPath>
+	</rating>
+
+	<text name="md_lbl_genre">
+	<pos>.7177 .0951</pos>
+	<size>.1001 .0101</size>
+	</text>
+	
+	<text name="md_genre">
+	<pos>.7601 .0951</pos>
+	<size>.2001 .0101</size>
+	</text>
+
+	<text name="md_lbl_releasedate">
+	<pos>.7177 .1261</pos>
+	<size>.1001 .0101</size>
+	</text>
+
+	<datetime name="md_releasedate">
+	<pos>.7771 .1261</pos>
+	<size>.2001 .0101</size>
+	<color>050505</color>
+	<format>%m/%Y</format>
+	</datetime>
+
+	<text name="md_lbl_players">
+	<pos>.7177 .1551</pos>
+	<size>.1001 .0101</size>
+	</text>
+	
+	<text name="md_players">
+	<pos>.7701 .1551</pos>
+	<size>.2001 .0101</size>
+	</text>
+
+	<text name="md_lbl_gametime">
+	<pos>.7177 .1831</pos>
+	<size>.1001 .0101</size>
+	</text>
+
+	<text name="md_gametime">
+	<pos>.7851 .1831</pos>
+	<size>.2001 .0101</size>
+	</text>
+
+	<text name="md_lbl_lastplayed">
+	<pos>.7177 .2101</pos>
+	<size>.1001 .0101</size>
+	</text>
+
+	<datetime name="md_lastplayed">
+	<pos>.7951 .2101</pos>
+	<size>.2001 .0101</size>
+	<color>050505</color>
+	<format>%m/%Y</format>
+	</datetime>
+
+	<text name="by" extra="true">
+	<text>By:</text>
+	<pos>.7461 .2351</pos>
+	<size>.227 .013</size>
+	<fontSize>0.024</fontSize>
+	<alignment>left</alignment>
+	<color>${comicfontcolor}</color>
+	<fontPath>${comicfonthelp}</fontPath>
+	</text>
+
+	<text name="publi" extra="true">
+	<text>{game:developer}!</text>
+	<origin>.5 .5</origin>
+	<fontPath>${comicfontmeta}</fontPath>
+	<pos>.8500 .2751</pos>
+	<size>.2630 h</size>
+	<alignment>center</alignment>
+	<verticalAlignment>top</verticalAlignment>
+	<rotation>0</rotation>
+	<color>d71440</color>
+	<glowColor>000000</glowColor>
+	<glowSize>3</glowSize>
+	<fontSize>0.05</fontSize>
+	<lineSpacing>1</lineSpacing>
+	</text>
+
+	<text name="xplayed" extra="true">
+	<text>Times Played: {game:playcount}</text>
+	<pos>0.8685 0.7675</pos>
+	<size>0.1108 0.0213</size>
+	<fontSize>0.026</fontSize>
+	<alignment>left</alignment>
+	<color>${comicfontcolor}</color>
+	<fontPath>${comicfontmeta}</fontPath>
+	</text>
+
+
+</view>
+
+
+</theme>

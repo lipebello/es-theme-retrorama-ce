@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+
+  <view name="splash">
+    <splash name="splash">
+      <backgroundColor>000000FF</backgroundColor>
+    </splash>
+	
+	<image name="background">
+		<linearSmooth>true</linearSmooth>
+		<path>./UI/comic/loading.jpg</path>
+		<color>FFFFFF</color>
+		<pos>0.5 0.5</pos>
+		<origin>0.5 0.5</origin>
+		<maxSize>1 1</maxSize>
+		<zIndex>1</zIndex>
+	</image>
+	
+	<image name="progressbar">
+			<origin>0 0</origin>
+			<pos>0.2599 0.7611</pos>
+			<size>0.4990 0.0648</size>
+			<path>./UI/starfull.png</path>
+			<color>af3028</color>
+			<zIndex>6</zIndex>
+		</image>
+
+		<image name="progressbar:active">
+			<tile>true</tile>
+			<path>./UI/starfull.png</path>
+			<color>FFFFFF</color>
+			<zIndex>7</zIndex>
+		</image>
+
+		<text name="label">
+			<fontPath>./font/comic-meta.ttf</fontPath>
+			<color>d9d9d9</color>
+			<glowColor>000000</glowColor>
+			<glowSize>1</glowSize>
+			<glowOffset>3 2</glowOffset>
+		</text>
+		
+		<text name="cheevosUser" extra="true">
+		<color>F0F0F0dd</color>
+		<forceUppercase>true</forceUppercase>
+		<backgroundColor>aa000000</backgroundColor>
+		<fontPath>./font/font.ttf</fontPath>
+		<lineSpacing>1.15</lineSpacing>
+		<fontSize>.045</fontSize>
+		<origin>.5 .5</origin>
+		<pos>0 0.18</pos>
+		<size>1 0.034</size>
+		<zIndex>2</zIndex>
+		</text>
+
+  </view>
+</theme>
