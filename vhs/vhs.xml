@@ -19,8 +19,8 @@ License: creative commons CC-BY-NC-SA
 </subset>
 
 <subset name="SysImg" displayName="${subset.SysImg}">	
-	<include name="char" displayName="Characters">./../subsets/chars.xml</include>
-	<include name="console" displayName="Consoles">./../subsets/console.xml</include>
+	<include name="Characters" displayName="${Characters}">./../subsets/chars.xml</include>
+	<include name="Consoles" displayName="${Consoles}">./../subsets/console.xml</include>
 </subset>
 
 
@@ -63,6 +63,20 @@ License: creative commons CC-BY-NC-SA
 	<zIndex>1</zIndex>
 </image>
 
+
+<image name="console" extra="true">
+	<origin>1 1</origin>
+	<maxSize>.6 .9</maxSize>
+	
+	<pos>1 .95</pos>
+	<zIndex>2</zIndex>
+</image>
+
+<image name="char" extra="true">
+
+	<zIndex>2</zIndex>
+
+</image>
 
 <text name="releaseYear" extra="true">
 		<text>${system.releaseYearOrNull}</text>
