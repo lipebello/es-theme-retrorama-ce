@@ -9,27 +9,16 @@ License: creative commons CC-BY-NC-SA
 
 <view name="system">
 
-	<image name="char" extra="true">
+	<image name="console" extra="true">
 			<storyboard>
         		<animation property="x" from="1.15" begin="0" duration="400" mode="EaseInOut"/>
 				<animation property="color" from="16151930" begin="0" duration="450" mode="EaseInOut"/>
 		</storyboard>
 		<linearSmooth>true</linearSmooth>
 		
-		<path>./console/default.png</path>
-		<path>./console/${system.theme}.png</path>
+		<path>./art/console/default.png</path>
+		<path>./art/console/${system.theme}.png</path>
 		
-		<pos ifSubset="Aspect Ratio:16-9|wide">1 .9611</pos>
-		<maxSize ifSubset="Aspect Ratio:16-9|wide">1 .9611</maxSize>
-		
-		<pos ifSubset="Aspect Ratio:3-2|portable">1 .9569</pos>
-		<maxSize ifSubset="Aspect Ratio:3-2|portable">.9 .9569</maxSize>
-		
-		<pos ifSubset="Aspect Ratio:standard|4-3">1 .9573</pos>
-		<maxSize ifSubset="Aspect Ratio:standard|4-3">1 .9573</maxSize>
-		
-		<origin>1 1</origin>
-		<zIndex>3</zIndex>
 	</image>
 	
 	
