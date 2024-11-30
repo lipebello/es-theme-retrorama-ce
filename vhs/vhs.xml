@@ -157,17 +157,7 @@ Last played : {binding:lastPlayedDate}
 		<zIndex>4</zIndex>
    </text>
 
-<!--Name for debug-->
-<text name="themename" extra="true">
-	<text>${system.theme}</text>
-	<fontPath>${font}</fontPath>  
-	<color>${fontColor}</color>
-	<fontSize>0.02</fontSize>
-	<alignment>left</alignment>
-	<pos>.01 .90</pos>
-	<zIndex>6</zIndex>
-</text>
-	
+
 </view>
 
 <view name="basic, detailed, video, grid, gamecarousel" >

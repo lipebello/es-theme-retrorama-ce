@@ -51,7 +51,33 @@ License: creative commons CC-BY-NC-SA
 		<include name="playstation" displayName="Playstation">./views/bt-psx.xml</include>
 	</subset>
 
+	<subset name="debug" displayName="Debug">
+	<include name="on"	displayName="On"></include>
+	<include name="off" displayName="Off"></include>
+	</subset>
 
-  
+<view name="system">
+  <!--Name for debug-->
+<text ifSubset="debug:on" name="themename" extra="true">
+	<text>${system.theme}</text>
+	<fontPath>${font}</fontPath>  
+	<color>${fontColor}</color>
+	<fontSize>0.02</fontSize>
+	<alignment>left</alignment>
+	<pos>.01 .44</pos>
+	<zIndex>8</zIndex>
+</text>
+
+<text ifSubset="debug:on" name="thememanu" extra="true">
+	<text>${system.manufacturer}</text>
+	<fontPath>${font}</fontPath>  
+	<color>${fontColor}</color>
+	<fontSize>0.02</fontSize>
+	<alignment>left</alignment>
+	<pos>.01 .48</pos>
+	<zIndex>8</zIndex>
+</text>
+
+</view>
 
 </theme>

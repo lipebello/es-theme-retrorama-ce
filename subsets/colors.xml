@@ -95,18 +95,34 @@ License: creative commons CC-BY-NC-SA
 <color2 if="${system.theme} == 'atari7800'">c4161c</color2>
 
 <color1 if="${system.manufacturer} == 'Nintendo'">d71920</color1>
+<color2 if="${system.manufacturer} == 'Nintendo'">0071a2</color2>
+<color2 if="${system.theme} == 'gameandwatch'">6fa765</color2>
 <color2 if="${system.theme} == 'nes'">0094bb</color2>
+<color2 if="${system.theme} == 'fds'">87c879</color2>
 <color2 if="${system.theme} == 'snes'">645faa</color2>
+<color2 if="${system.theme} == 'satellaview'">645faa</color2>
+<color2 if="${system.theme} == 'snes-msu1'">87c879</color2>
 <color2 if="${system.theme} == 'gba'">723063</color2>
 <color2 if="${system.theme} == 'gb'">acbd82</color2>
+<color2 if="${system.theme} == 'sgb'">c96b92</color2>
 <color2 if="${system.theme} == 'gbc'">008e84</color2>
+<color2 if="${system.theme} == 'nds'">39bb9d</color2>
+<color2 if="${system.theme} == 'virtualboy'">7c2427</color2>
+<color2 if="${system.theme} == 'switch'">33a3dc</color2>
+<color2 if="${system.theme} == 'wii'">83aebd</color2>
 
+
+
+<color1 if="${system.manufacturer} == 'Sega & Microsoft'">0053b9</color1>
+<color2 if="${system.manufacturer} == 'Sega & Microsoft'">00accd</color2>
 
 <color1 if="${system.manufacturer} == 'Sega'">0053b9</color1>
+<color2 if="${system.manufacturer} == 'Sega'">00accd</color2>
 <color2 if="${system.theme} == 'megadrive'">ed1847</color2>
 <color2 if="${system.theme} == 'mastersystem'">c40063</color2>
 <color2 if="${system.theme} == 'dreamcast'">f37053</color2>
 <color2 if="${system.theme} == 'gamegear'">009fda</color2>
+<color2 if="${system.theme} == 'sega32x'">f27292</color2>
 
 <color1 if="${system.manufacturer} == 'NEC'">f37021</color1>
 <color2 if="${system.theme} == 'pcengine'">353553</color2>

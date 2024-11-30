@@ -15,10 +15,11 @@ License: creative commons CC-BY-NC-SA
 <view name="screen">
 
 	<text name="clock">
-		<pos>.99 .995</pos>
-		<origin>1 1</origin>
+		<pos>.99 0</pos>
+		<size>.2 .1</size>
+		<origin>1 0</origin>
 		<alignment>right</alignment>
-		<verticalAlignment>bottom</verticalAlignment>
+		<verticalAlignment>top</verticalAlignment>
 		<fontPath>${comicfonthelp}</fontPath>  
 		<color>${fontColor}</color>
 		<glowColor>000000</glowColor>
@@ -81,12 +82,30 @@ License: creative commons CC-BY-NC-SA
 	<path >./../UI/comic/empty.png</path>
 </image>
 
-<text name="systemInfo" visible="false"/>
+
+
+<text name="systemInfo">
+		<origin>1 1</origin>
+		<pos>.98 .995</pos>
+		<size>.25 .05</size>
+		<alignment>right</alignment>
+		<verticalAlignment>bottom</verticalAlignment>
+		<backgroundColor>00000000</backgroundColor>
+		<color>ffcb05</color>
+		<glowColor>000000</glowColor>
+		<glowSize>2</glowSize>
+		<fontPath>${comicfonthelp}</fontPath>
+		<fontSize>0.023</fontSize>
+		<lineSpacing>1.2</lineSpacing>
+		<zIndex>8</zIndex>
+</text>
+
+<!--
 	<text name="systemInfoEx" extra="true">
 	<text>{binding:total}</text>
 		<storyboard><animation property="opacity" from="0" begin="0" duration="500" mode="EaseIn"/></storyboard>
 		<origin>.5 .5</origin>
-		<pos>.1079 .8101</pos>
+		<pos>.0800 .8001</pos>
 		<alignment>left</alignment>
 		<verticalAlignment>bottom</verticalAlignment>
 		<backgroundColor>00000000</backgroundColor>
@@ -99,15 +118,17 @@ License: creative commons CC-BY-NC-SA
 		<zIndex>8</zIndex>
     </text>
 
+
 <image name="sysinfo" extra="true">
 	<storyboard><animation property="opacity" from="0" begin="0" duration="400" mode="EaseIn"/></storyboard>
 	<path>./UI/comic/sysinfo.png</path>
 	<linearSmooth>true</linearSmooth>
 	<origin>0 1</origin>
-	<maxSize>.18 .33</maxSize>
-	<pos>.008 .98</pos>
+	<maxSize>.225 .225</maxSize>
+	<pos>.02 .95</pos>
 	<zIndex>7</zIndex>
 </image>
+-->
 
 <image name="brandchar" extra="true">
 	<path>./art/glchar/${system.theme}.jpg</path>
@@ -140,9 +161,9 @@ License: creative commons CC-BY-NC-SA
 	<storyboard><animation property="opacity" from="0" begin="0" duration="300" mode="EaseInOut"/></storyboard>
 	<path>./art/console/${system.theme}.png</path>
 	<linearSmooth>true</linearSmooth>
-	<maxSize>.5613 .6481</maxSize>
-	<origin>0 1</origin>
-	<pos>.1101 .9555</pos>
+	<maxSize>.5313 .6781</maxSize>
+	<origin>0.5 .5</origin>
+	<pos>.3601 .6455</pos>
 	<zIndex>3</zIndex>
 </image>
 
@@ -207,38 +228,6 @@ License: creative commons CC-BY-NC-SA
 	<zIndex>1</zIndex>
 </image>
 
-
-<text name="themename" extra="true">
-	<text>${system.theme}</text>
-	<fontPath>${font}</fontPath>  
-	<color>${fontColor}</color>
-	<fontSize>0.02</fontSize>
-	<alignment>left</alignment>
-	<pos>.01 .90</pos>
-	<zIndex>10</zIndex>
-</text>
-
-<!--
-<text name="themename2" extra="true">
-	<text>${system.manufacturer}</text>
-	<fontPath>${font}</fontPath>  
-	<color>${fontColor}</color>
-	<fontSize>0.02</fontSize>
-	<alignment>left</alignment>
-	<pos>.01 .92</pos>
-	<zIndex>6</zIndex>
-</text>
-
-<text name="themename3" extra="true">
-	<text>${system.hardwareType}</text>
-	<fontPath>${font}</fontPath>  
-	<color>${fontColor}</color>
-	<fontSize>0.02</fontSize>
-	<alignment>left</alignment>
-	<pos>.01 .94</pos>
-	<zIndex>6</zIndex>
-</text>
--->
 
 </view>
 

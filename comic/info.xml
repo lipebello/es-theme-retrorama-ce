@@ -56,20 +56,54 @@ License: creative commons CC-BY-NC-SA
 	|| ${system.theme} == 'auto-cps1'
 	|| ${system.theme} == 'auto-cps2'
 	|| ${system.theme} == 'auto-cps3'
+	|| ${system.theme} == 'model2'
+	|| ${system.theme} == 'model3'
+	|| ${system.theme} == 'naomi'
+	|| ${system.theme} == 'naomi2'
+	|| ${system.theme} == 'atomiswave'
+	|| ${system.theme} == 'systemsp'
+	|| ${system.theme} == 'chihiro'
 	">28-DEC 1981</text>
 	<text if="${system.theme} == 'arcade'">15-OCT 1971</text>
 	<text if="${system.theme} == 'auto-at2players'">22-APR 1987</text>
 	<text if="${system.theme} == 'auto-at4players'">11-OCT 1989</text>
+	<text if="${system.theme} == 'gameandwatch'">28-APR 1980</text>
 	<text if="${system.theme} == 'nes'">01-SEP 1986</text>
+	<text if="${system.theme} == 'n64'">29-SEP 1996</text>
+	<text if="${system.theme} == 'n64dd'">29-SEP 1996</text>
+	<text if="${system.theme} == 'fds'">21-FEV 1986</text>
 	<text if="${system.theme} == 'snes'">31-AUG 1991</text>
-	<text if="${system.theme} == 'megadrive'">19-AUG 1988</text>
-	<text if="${system.theme} == 'mastersystem'">01-SEP 1986</text>
+	<text if="${system.theme} == 'snes-msu1'">31-AUG 1991</text>
+	<text if="${system.theme} == 'sgb'">14-JUN 1994</text>
+	<text if="${system.theme} == 'virtualboy'">14-AUG 1995</text>
+	<text if="${system.theme} == 'satellaview'">23-APR 1995</text>
+	
+	<text if="${system.theme} == 'gb'">31-JUL 1989</text>
+	<text if="${system.theme} == 'gc'">18-NOV 2001</text>
+	<text if="${system.theme} == 'gb2players'">31-JUL 1989</text>
+	<text if="${system.theme} == 'gbc'">18-NOV 1998</text>
+	<text if="${system.theme} == 'gbc2players'">18-NOV 1998</text>
 	<text if="${system.theme} == 'gba'">11-JUN 2001</text>
+	<text if="${system.theme} == 'nds'">21-NOV 2004</text>
+	<text if="${system.theme} == 'wii'">18-NOV 2006</text>
+	<text if="${system.theme} == 'wiiu'">18-NOV 2012</text>
+	<text if="${system.theme} == '3ds'">26-FEV 2011</text>
+	<text if="${system.theme} == 'switch'">3-MAR 2017</text>
+	<text if="${system.theme} == 'pokemini'">16-NOV 2001</text>
 	<text if="${system.theme} == 'pcengine'">15-JUN 1983</text>
 	<text if="${system.theme} == 'psx'">29-SEP 1995</text>
-	<text if="${system.theme} == 'dreamcast'">09-SEP 1999</text>
+	<text if="${system.theme} == 'dreamcast'">9-SEP 1999</text>
 	<text if="${system.theme} == 'atari2600'">11-SEP 1977</text>
-	<text if="${system.theme} == 'ngpc'">06-AUG 1999</text>
+	<text if="${system.theme} == 'ngpc'">6-AUG 1999</text>
+	
+	<text if="${system.theme} == 'sg-1000'">15-JUN 1983</text>
+	<text if="${system.theme} == 'megadrive'">19-AUG 1988</text>
+	<text if="${system.theme} == 'msu-md'">19-AUG 1988</text>
+	<text if="${system.theme} == 'mastersystem'">01-SEP 1986</text>
+	<text if="${system.theme} == 'gamegear'">26-APR 1991</text>
+	<text if="${system.theme} == 'segacd'">15-OCT 1992</text>
+	<text if="${system.theme} == 'sega32x'">19-NOV 1994</text>
+	<text if="${system.theme} == 'saturn'">11-MAY 1995</text>
 </text>
 
 <text name="price" extra="true">
@@ -116,20 +150,54 @@ License: creative commons CC-BY-NC-SA
 	|| ${system.theme} == 'auto-cps1'
 	|| ${system.theme} == 'auto-cps2'
 	|| ${system.theme} == 'auto-cps3'
+	|| ${system.theme} == 'model2'
+	|| ${system.theme} == 'model3'
+	|| ${system.theme} == 'naomi'
+	|| ${system.theme} == 'naomi2'
+	|| ${system.theme} == 'atomiswave'
+	|| ${system.theme} == 'systemsp'
+	|| ${system.theme} == 'chihiro'
 	">$FREE!</text>
 	<text if="${system.theme} == 'arcade'">$0.25</text>
 	<text if="${system.theme} == 'auto-at2players'">$0.25</text>
 	<text if="${system.theme} == 'auto-at4players'">$0.25</text>
+	<text if="${system.theme} == 'gameandwatch'">$30.00</text>
 	<text if="${system.theme} == 'nes'">$89.00</text>
+	<text if="${system.theme} == 'fds'">¥15,000</text>
 	<text if="${system.theme} == 'snes'">$199.00</text>
-	<text if="${system.theme} == 'megadrive'">$189.00</text>
-	<text if="${system.theme} == 'mastersystem'">$200.00</text>
+	<text if="${system.theme} == 'snes-msu1'">$199.00</text>
+	<text if="${system.theme} == 'sgb'">$59.99</text>
+	<text if="${system.theme} == 'n64'">$199.00</text>
+	<text if="${system.theme} == 'n64dd'">$199.00</text>
+	<text if="${system.theme} == 'satellaview'">¥14,000</text>
+	<text if="${system.theme} == 'virtualboy'">$179.95</text>
+	
+	<text if="${system.theme} == 'gc'">$199.00</text>
+	<text if="${system.theme} == 'gb'">$89.95</text>
+	<text if="${system.theme} == 'gbc'">$69.99</text>
+	<text if="${system.theme} == 'gb2players'">$89.95</text>
+	<text if="${system.theme} == 'gbc2players'">$69.99</text>
 	<text if="${system.theme} == 'gba'">$149.99</text>
+	<text if="${system.theme} == 'pokemini'">$40.00</text>
+	<text if="${system.theme} == 'nds'">$149.99</text>
+	<text if="${system.theme} == 'wii'">$249.99</text>
+	<text if="${system.theme} == 'wiiu'">$299.00</text>
+	<text if="${system.theme} == '3ds'">$249.99</text>
+	<text if="${system.theme} == 'switch'">$299.99</text>
 	<text if="${system.theme} == 'pcengine'">¥14,800</text>
 	<text if="${system.theme} == 'psx'">$299.00</text>
 	<text if="${system.theme} == 'dreamcast'">$199.00</text>
 	<text if="${system.theme} == 'atari2600'">$199.00</text>
 	<text if="${system.theme} == 'ngpc'">$69.95</text>
+	
+	<text if="${system.theme} == 'sg-1000'">¥15,000</text>
+	<text if="${system.theme} == 'megadrive'">$189.00</text>
+	<text if="${system.theme} == 'msu-md'">$189.00</text>
+	<text if="${system.theme} == 'segacd'">$299.00</text>
+	<text if="${system.theme} == 'sega32x'">$159.99</text>
+	<text if="${system.theme} == 'mastersystem'">$200.00</text>
+	<text if="${system.theme} == 'gamegear'">$149.99</text>
+	<text if="${system.theme} == 'saturn'">$399.00</text>
 </text>
 
 <text name="cpu" extra="true">
@@ -143,6 +211,8 @@ License: creative commons CC-BY-NC-SA
 	<verticalAlignment>bottom</verticalAlignment>
 	<lineSpacing>.9</lineSpacing>
 	<zIndex>6</zIndex>
+	
+	<text if="${system.theme} == 'gameandwatch'" >1-Bit</text>
 	
 	<text if="${system.theme} == 'arcade' 
 	|| ${system.theme} == 'auto-favorites'
@@ -160,21 +230,56 @@ License: creative commons CC-BY-NC-SA
 	|| ${system.theme} == 'auto-at2players'
 	|| ${system.theme} == 'auto-at4players'
 	|| ${system.theme} == 'nes'
+	|| ${system.theme} == 'gb'
+	|| ${system.theme} == 'gbc'
+	|| ${system.theme} == 'gb2players'
+	|| ${system.theme} == 'gbc2players'
+	|| ${system.theme} == 'pokemini'
+	|| ${system.theme} == 'fds'
 	|| ${system.theme} == 'mastersystem'
+	|| ${system.theme} == 'sg-1000'
+	|| ${system.theme} == 'gamegear'
 	|| ${system.theme} == 'atari2600'"
 	>8-Bit</text>
 	
 	<text if="${system.theme} == 'snes'
+	|| ${system.theme} == 'snes-msu1'
+	|| ${system.theme} == 'sgb'
+	|| ${system.theme} == 'satellaview'
 	|| ${system.theme} == 'megadrive'
+	|| ${system.theme} == 'segacd'
+	|| ${system.theme} == 'sega32x'
+	|| ${system.theme} == 'msu-md'
 	|| ${system.theme} == 'pcengine'
 	|| ${system.theme} == 'ngpc'"
 	>16-Bit</text>
 	
 	<text if="${system.theme} == 'auto-allgames'
 	|| ${system.theme} == 'gba'
+	|| ${system.theme} == 'virtualboy'
+	|| ${system.theme} == 'nds'
+	|| ${system.theme} == 'wii'
+	|| ${system.theme} == 'wiiu'
+	|| ${system.theme} == '3ds'
 	|| ${system.theme} == 'psx'
-	|| ${system.theme} == 'dreamcast'"
+	|| ${system.theme} == 'dreamcast'
+	|| ${system.theme} == 'model2'
+	|| ${system.theme} == 'model3'
+	|| ${system.theme} == 'sega32x'
+	|| ${system.theme} == 'naomi'
+	|| ${system.theme} == 'naomi2'
+	|| ${system.theme} == 'systemsp'
+	|| ${system.theme} == 'chihiro'
+	|| ${system.theme} == 'saturn'"
 	>32-Bit</text>
+	
+	<text if="${system.theme} == 'n64'
+	|| ${system.theme} == 'n64dd'
+	|| ${system.theme} == 'switch'"
+	>64-Bit</text>
+	
+	<text if="${system.theme} == 'gc'" >128-Bit</text>
+	
 </text>
 </view>  
 

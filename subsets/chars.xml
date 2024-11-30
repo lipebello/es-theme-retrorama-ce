@@ -29,7 +29,7 @@ License: creative commons CC-BY-NC-SA
 		<maxSize if="{screen.ratio} == '16/9'">1 .9611</maxSize>
 -->
 	<pos>1 1</pos>
-	<maxSize>1 .96</maxSize>
+	<maxSize>1 .95</maxSize>
 
 		<origin>1 1</origin>
 		<zIndex>5</zIndex>

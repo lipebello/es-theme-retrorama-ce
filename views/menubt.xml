@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Theme: Retrorama Champion Edition
+Original author: Filipe Bello
+License: creative commons CC-BY-NC-SA
+-->
+<theme>
+  <formatVersion>7</formatVersion>
+
+<include>../theme.xml</include>
+		
+<view name="system, basic, detailed, video, grid, gamecarousel">
+
+	<helpsystem name="help">
+		<iconUpDown>./UI/BT_ARC/iconUD.png</iconUpDown>
+		<iconUpDown if="${system.manufacturer} == 'Nintendo'">./UI/BT_SNES/iconUD.png</iconUpDown>
+
+
+        <iconLeftRight>./UI/BT_ARC/iconLR.png</iconLeftRight>
+        <iconLeftRight if="${system.manufacturer} == 'Nintendo'">./UI/BT_SNES/iconLR.png</iconLeftRight>
+        <iconLeftRight if="${system.manufacturer} == 'Sega'">./UI/BT_MEGA/iconLR.png</iconLeftRight>
+
+
+        <iconUpDownLeftRight>./UI/BT_ARC/iconUDLR.png</iconUpDownLeftRight>
+        <iconUpDownLeftRight if="${system.manufacturer} == 'Nintendo'">./UI/BT_SNES/iconUDLR.png</iconUpDownLeftRight>
+        <iconUpDownLeftRight if="${system.manufacturer} == 'Sega'">./UI/BT_MEGA/iconUDLR.png</iconUpDownLeftRight>
+		
+		
+		<iconStart>./UI/BT_ARC/iconST.png</iconStart>
+		<iconStart if="${system.manufacturer} == 'Nintendo'">./UI/BT_SNES/iconST.png</iconStart>
+		<iconStart if="${system.manufacturer} == 'Sega'">./UI/BT_MEGA/iconST.png</iconStart>
+		
+		
+		<iconSelect>./UI/BT_ARC/iconSL.png</iconSelect>
+		<iconSelect if="${system.manufacturer} == 'Nintendo'">./UI/BT_SNES/iconSL.png</iconSelect>
+		<iconSelect if="${system.manufacturer} == 'Sega'">./UI/BT_MEGA/iconSL.png</iconSelect>
+
+
+		<iconA>./UI/BT_ARC/iconA.png</iconA>
+		<iconA if="${system.manufacturer} == 'Nintendo'">./UI/BT_SNES/iconA.png</iconA>
+		<iconA if="${system.manufacturer} == 'Sega'">./UI/BT_MEGA/iconA.png</iconA>
+
+
+		<iconB>./UI/BT_ARC/iconB.png</iconB>
+		<iconB if="${system.manufacturer} == 'Nintendo'">./UI/BT_SNES/iconB.png</iconB>
+		<iconB if="${system.manufacturer} == 'Sega'">./UI/BT_MEGA/iconB.png</iconB>
+
+
+		<iconX>./UI/BT_ARC/iconX.png</iconX>
+		<iconX if="${system.manufacturer} == 'Nintendo'">./UI/BT_SNES/iconX.png</iconX>
+		<iconX if="${system.manufacturer} == 'Sega'">./UI/BT_MEGA/iconX.png</iconX>
+		
+		
+		<iconY>./UI/BT_ARC/iconY.png</iconY>
+		<iconY if="${system.manufacturer} == 'Nintendo'">./UI/BT_SNES/iconY.png</iconY>
+		<iconY if="${system.manufacturer} == 'Sega'">./UI/BT_MEGA/iconY.png</iconY>
+		
+		
+		<iconL>./UI/BT_ARC/iconL.png</iconL>
+		<iconL if="${system.manufacturer} == 'Nintendo'">./UI/BT_SNES/iconL.png</iconL>
+		<iconL if="${system.manufacturer} == 'Sega'">./UI/BT_MEGA/iconL.png</iconL>
+        
+		
+		<iconR>./UI/BT_ARC/iconR.png</iconR>
+		<iconR if="${system.manufacturer} == 'Nintendo'">./UI/BT_SNES/iconR.png</iconR>
+		<iconR if="${system.manufacturer} == 'Sega'">./UI/BT_MEGA/iconR.png</iconR>
+		
+		
+		<iconF1>./UI/BT_ARC/iconF1.png</iconF1>
+		<iconF1 if="${system.manufacturer} == 'Nintendo'">./UI/BT_SNES/iconF1.png</iconF1>
+		<iconF1 if="${system.manufacturer} == 'Sega'">./UI/BT_MEGA/iconF1.png</iconF1>
+	
+	
+	</helpsystem>
+
+</view>
+</theme>
